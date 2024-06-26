@@ -25,10 +25,3 @@ class Sportif(Personne):
 
     def __str__(self):
         return f"Je suis {self.name}, j'ai {self.age} ans et je pratique le {self.sport}"
-
-#TESTS
-Clara = Personne("Clara", 12)
-print(Clara)
-
-Jojo = Sportif("Jojo", 12, "basket")
-print(Jojo)
