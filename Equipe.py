@@ -10,4 +10,3 @@ class Equipe():
 equipe_0 = Equipe('basket', 'les foufous', ('luc', 'david', 'fronçois'))
 equipe_0.show_team_name()
 equipe_0.show_team_members()
-print("test")
