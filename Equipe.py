@@ -7,6 +7,7 @@ class Equipe():
         print(self.team_members)
     def show_team_name(self):
         print(self.name)
+
 equipe_0 = Equipe('basket', 'les foufous', ('luc', 'david', 'fronçois'))
 equipe_0.show_team_name()
 equipe_0.show_team_members()
