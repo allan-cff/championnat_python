@@ -3,10 +3,10 @@ class Equipe():
         self.sport = sport
         self.name = name
         self.team_members = team_members
-    def show_team_members(self):
-        print(self.team_members)
-    def show_team_name(self):
-        print(self.name)
-equipe_0 = Equipe('basket', 'les foufous', ('luc', 'david', 'fronçois'))
-equipe_0.show_team_name()
-equipe_0.show_team_members()
+        self.average_score = 0
+
+    def __str__(self):
+        result = f"L'équipe {self.name} ({self.sport}) est constituée des joueurs suivants : "
+        for joueur in self.team_members: #récupère les valeurs dans la liste des team_members
+            result += str(joueur) + ", " #ajoute les joueurs et met une virgule
+        return result
