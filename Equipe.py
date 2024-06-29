@@ -8,5 +8,5 @@ class Equipe():
     def __str__(self):
         result = f"L'équipe {self.name} ({self.sport}) est constituée des joueurs suivants : "
         for joueur in self.team_members: #récupère les valeurs dans la liste des team_members
-            result += str(joueur) + ", " #ajoute les joueurs et met une virgule
+            result += joueur.name + ", " #ajoute les joueurs et met une virgule
         return result
